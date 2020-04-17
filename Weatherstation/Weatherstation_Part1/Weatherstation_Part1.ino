@@ -11,24 +11,22 @@
 //Variables for display
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
-// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
-#define OLED_RESET     4 // Reset pin # (or -1 if sharing Arduino reset pin)
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
 
 //Login data for WiFi
-const char *ssid     = "WIFI_SSID"; //TODO
-const char *password = "WIFI-PASS";  //TODO
+const char *ssid     = "WIFI_SSID";   //TODO
+const char *password = "WIFI-PASS";   //TODO
 
 //Needed variables for openweathermap.org
-const String apiKey = "ADD-YOUR_API";
-const String location = "ADD-YOUR-LOCATION"; //Wiesbaden,de
+const String apiKey = "ADD-YOUR_API";         //TODO
+const String location = "ADD-YOUR-LOCATION";  //TODO like "Wiesbaden,de"
 const char *clientAdress = "api.openweathermap.org";
 String strMinTemp, strMaxTemp, strCurTemp, strFeelTemp;
 DynamicJsonDocument jsonDoc(20000);
 
 //Variables to get and set time
 long utcOffsetInSeconds = 7200;
-char daysOfTheWeek[7][4] = {"Sa", "So","Mo", "Di", "Mi", "Do", "Fr"};
+char daysOfTheWeek[7][4] = {"Sa", "So","Mo", "Di", "Mi", "Do", "Fr"};  // Warning german words!
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", utcOffsetInSeconds);
 
@@ -205,11 +203,11 @@ void DisplayUpdate()
                     String(".") + getDigits(month()) + String(".") + year() + 
                     "  " + getDigits(hour()) + String(":") + getDigits(minute()));
     //Print second line on display
-    display.println(String("Min ") + strMinTemp + String("  Max ") + strMaxTemp);
+    display.println(String("Min.  ") + strMinTemp + String("  Max.  ") + strMaxTemp);
     //Print third line on display
-    display.println(String("Current ") + strCurTemp + String(" C"));
+    display.println(String("Aktuell   ") + strCurTemp + String(" C"));  //"Aktuell" german for current
     //Print last line on display
-    display.println(String("Feels like ") + strFeelTemp + String(" C"));
+    display.println(String("Gefuehlt  ") + strFeelTemp + String(" C")); //"Gefuehlt" german for feels like
     display.display();
     //Print all in serial monitor
     Serial.println("---------------------");
@@ -219,8 +217,8 @@ void DisplayUpdate()
                   String(".") + year());
     Serial.println(getDigits(hour()) + String(":") + getDigits(minute()));
     Serial.println(String("Min ") + strMinTemp + String("  Max ") + strMaxTemp);
-    Serial.println(String("Current ") + strCurTemp);
-    Serial.println(String("Feels like ") + strFeelTemp);
+    Serial.println(String("Aktuell ") + strCurTemp);
+    Serial.println(String("Gefuehlt ") + strFeelTemp);
     iLastMinute = minute();
     bUpdateDisplay = false;
   }

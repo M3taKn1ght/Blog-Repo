@@ -11,12 +11,11 @@ After connecting like shown below
 
 and adding the following libaries
 1. NTPClient
-2. NTPClientLib
-3. WiFi
-4. Adafruit SSD1306
-5. ArduinoJson
-6. Time
+2. WiFi
+3. Adafruit SSD1306
+4. ArduinoJson
+5. Time
 
-and uploading the ion-File to NodeMCU, the result looks like
+and uploading the ion-File (**after modifing the TODOs**) to NodeMCU, the result looks like
 
 ![LiveView](images/LiveView.jpg)
