@@ -18,6 +18,6 @@ and adding the following libaries
 4. ArduinoJson
 5. Time
 
-and uploading the ion-File (**after modifing the TODOs**) to NodeMCU, the result looks like
+and uploading the ino-File (**after modifing the TODOs**) to NodeMCU, the result looks like
 
 ![LiveView](images/LiveView.jpg)
