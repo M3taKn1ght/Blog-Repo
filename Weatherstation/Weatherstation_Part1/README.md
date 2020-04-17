@@ -6,4 +6,17 @@ Lets start simple with:
 3. [Jumper wire cable female to male](https://www.az-delivery.de/products/40-stk-jumper-wire-female-to-male-20-zentimeter?_pos=20&_sid=5cfea44cd&_ss=r)
 
 After connecting like shown below
+
 ![Schema](images/Weatherstation_Part1.jpg)
+
+and adding the following libaries
+1. NTPClient
+2. NTPClientLib
+3. WiFi
+4. Adafruit SSD1306
+5. ArduinoJson
+6. Time
+
+and uploading the ion-File to NodeMCU, the result looks like
+
+![LiveView](images/LiveView.jpg)

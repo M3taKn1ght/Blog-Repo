@@ -16,12 +16,12 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 //Login data for WiFi
-const char *ssid     = "WLAN-172162";
-const char *password = "2022569145297772";
+const char *ssid     = "WIFI_SSID"; //TODO
+const char *password = "WIFI-PASS";  //TODO
 
 //Needed variables for openweathermap.org
-const String apiKey = "7791c94b70921020c6944934bd1ee54e";
-const String location = "Wiesbaden,de";
+const String apiKey = "ADD-YOUR_API";
+const String location = "ADD-YOUR-LOCATION"; //Wiesbaden,de
 const char *clientAdress = "api.openweathermap.org";
 String strMinTemp, strMaxTemp, strCurTemp, strFeelTemp;
 DynamicJsonDocument jsonDoc(20000);
