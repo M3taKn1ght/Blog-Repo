@@ -1,4 +1,4 @@
-// Weatherstation Part 1 -- 2020 Joern Weise GPL 3.0 --
+// Weatherstation Part 2 -- 2020 Joern Weise GPL 3.0 --
 
 #include <Adafruit_SSD1306.h>
 #include <Wire.h>
@@ -10,7 +10,7 @@
 
 //Variables for display
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
 
 //Login data for WiFi
