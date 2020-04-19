@@ -3,7 +3,7 @@
 #include <Adafruit_SSD1306.h>
 #include <Wire.h>
 #include <ArduinoJson.h>  
-#include <WiFi.h>
+#include <WiFiClientSecure.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 #include <TimeLib.h>
@@ -129,9 +129,8 @@ void WeatherUpdate()
 //Method for the API-Request to openweathermap.org
 String RequestWeather()
 {
-  WiFiClient client;
-  const int httpPort = 80;
-  if(!client.connect(clientAdress,httpPort)){
+  WiFiClientSecure client;
+  if(!client.connect(clientAdress,443)){
     Serial.println("Failed to connect");
     return "";
   }
