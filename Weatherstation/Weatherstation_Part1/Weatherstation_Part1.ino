@@ -27,8 +27,7 @@ DynamicJsonDocument jsonDoc(20000);
 //Variables to get and set time
 long utcOffsetInSeconds = 7200;
 //Warning german word in program
-String daysOfTheWeek[7] = {"So","Mo", "Di", "Mi", "Do", "Fr", "Sa"};  //For using Ubuntu
-//String daysOfTheWeek[7] = {"Sa", "So","Mo", "Di", "Mi", "Do", "Fr"};  //For using Windows
+String daysOfTheWeek[7] = {"So","Mo", "Di", "Mi", "Do", "Fr", "Sa"};
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", utcOffsetInSeconds);
 
@@ -202,8 +201,7 @@ void DisplayUpdate()
     display.setTextColor(SSD1306_WHITE);  // Draw white text
     display.setCursor(0,0);               // Start at top-left corner
     //Print first line on display
-    //display.println(String(daysOfTheWeek[weekday()]) + " " + getDigits(day()) +   //For Windows
-    display.println(String(daysOfTheWeek[weekday()-1]) + " " + getDigits(day()) +   //For ubuntu
+    display.println(String(daysOfTheWeek[weekday()-1]) + " " + getDigits(day()) +
                     String(".") + getDigits(month()) + String(".") + year() + 
                     "  " + getDigits(hour()) + String(":") + getDigits(minute()));
     //Print second line on display
@@ -216,8 +214,7 @@ void DisplayUpdate()
     //Print all in serial monitor
     Serial.println("---------------------");
     Serial.println("EpochTime: " + String(timeClient.getEpochTime()));
-    //Serial.println(String(daysOfTheWeek[weekday()]) + String(". ") +  //For Windows
-    Serial.println(String(daysOfTheWeek[weekday()-1]) + String(". ") +  //For ubuntu
+    Serial.println(String(daysOfTheWeek[weekday()-1]) + String(". ") +
                   getDigits(day()) + String(".") + getDigits(month()) + 
                   String(".") + year());
     Serial.println(getDigits(hour()) + String(":") + getDigits(minute()));
