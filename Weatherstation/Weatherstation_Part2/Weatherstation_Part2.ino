@@ -7,6 +7,7 @@
 #include <WiFiUdp.h>
 #include <TimeLib.h>
 #include <WiFiClientSecure.h>
+#include <WiFi.h>
 
 //Variables for display
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
