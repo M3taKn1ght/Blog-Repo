@@ -3,10 +3,11 @@
 #include <Adafruit_SSD1306.h>
 #include <Wire.h>
 #include <ArduinoJson.h>  
-#include <WiFiClientSecure.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 #include <TimeLib.h>
+#include <WiFi.h>
+#include <WiFiClientSecure.h>
 
 //Variables for display
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -21,13 +22,13 @@ const char *password = "WIFI-PASS";   //TODO
 const String apiKey = "ADD-YOUR_API";         //TODO
 const String location = "ADD-YOUR-LOCATION";  //TODO like "Wiesbaden,de"
 const char *clientAdress = "api.openweathermap.org";
-String strMinTemp, strMaxTemp, strCurTemp, strFeelTemp;
-DynamicJsonDocument jsonDoc(20000);
+int strMinTemp, strMaxTemp, strCurTemp, strFeelTemp, strSunrise, strSunset;
+DynamicJsonDocument jsonDoc(2000);
 
 //Variables to get and set time
-long utcOffsetInSeconds = 7200;
-//Warning german word in program
+int utcOffsetInSeconds = 7200;
 String daysOfTheWeek[7] = {"So","Mo", "Di", "Mi", "Do", "Fr", "Sa"};
+time_t tmLastFullMoon;
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", utcOffsetInSeconds);
 
@@ -37,7 +38,7 @@ bool bUpdateDisplay = true;
 //Setup to init the NodeMCU
 void setup() {
   Serial.begin(115200);
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) // Address 0x3C for 128x32
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) // Address 0x3C for OLED-Display
   { 
     Serial.println(F("SSD1306 allocation failed"));
     for(;;); // Don't proceed, loop forever
@@ -47,14 +48,16 @@ void setup() {
     delay ( 500 );
     Serial.print ( "." );
   }
+  tmLastFullMoon = tmConvert(YEAR,MONTH,DAY,HOUR,MINUTE,SECOND); //TODO https://www.mondverlauf.de
   Serial.println("");
+  Serial.println("Last moon: " + String(tmLastFullMoon));
   Serial.println("Connected to Wifi with IP: " + WiFi.localIP().toString());
   timeClient.begin();
 }
 
 void loop() {
 
-  WeatherUpdate();  //Method to update weather  
+  WeatherUpdate();  //Method to update weather
   TimeUpdate();     //Method to update time
   DisplayUpdate();  //Method to update Display
   if(firstrun)
@@ -65,7 +68,7 @@ void loop() {
 void TimeUpdate()
 {
   static bool bUpdateDone;
-  if((firstrun || (second() % 30) == 0) && !bUpdateDone)
+  if((firstrun || (minute() % 2) == 0) && !bUpdateDone)
   {
     bool bUpdate = timeClient.update();
     setTime(timeClient.getEpochTime());
@@ -78,7 +81,7 @@ void TimeUpdate()
     }
     bUpdateDone = true;
   }
-  if((second() % 30) != 0)
+  if((minute() % 2) != 0)
     bUpdateDone = false;
 }
 
@@ -106,6 +109,8 @@ void WeatherUpdate()
       strMaxTemp = RoundTemp(jsonDoc["main"]["temp_max"].as<double>());
       strCurTemp = RoundTemp(jsonDoc["main"]["temp"].as<double>());
       strFeelTemp = RoundTemp(jsonDoc["main"]["feels_like"].as<double>());
+      strSunrise  = jsonDoc["sys"]["sunrise"].as<int>();
+      strSunset   = jsonDoc["sys"]["sunset"].as<int>();
       static long timeZone = jsonDoc["timezone"];  //Get latest timezone
       //Print to Serial Monitor
       Serial.println("Min Temp: " + strMinTemp);
@@ -130,7 +135,7 @@ void WeatherUpdate()
 String RequestWeather()
 {
   WiFiClientSecure client;
-  if(!client.connect(clientAdress,443)){
+  if(!client.connect(clientAdress,443)){  //Changed to https -> Port 443
     Serial.println("Failed to connect");
     return "";
   }
@@ -185,9 +190,9 @@ String RequestWeather()
   return resBody;
 }
 
-String RoundTemp(double dTemp)
+int RoundTemp(double dTemp)
 {
-  return String(int(dTemp + 0.5));
+  return int(dTemp + 0.5);
 }
 
 //Method to update display content
@@ -199,28 +204,34 @@ void DisplayUpdate()
     display.setTextSize(1);               // Normal 1:1 pixel scale
     display.setTextColor(SSD1306_WHITE);  // Draw white text
     display.setCursor(0,0);               // Start at top-left corner
-    //Print first line on display
-    display.println(String(daysOfTheWeek[weekday()-1]) + " " + getDigits(day()) +
-                    String(".") + getDigits(month()) + String(".") + year() + 
-                    "  " + getDigits(hour()) + String(":") + getDigits(minute()));
-    //Print second line on display
-    display.println(String("Min.  ") + strMinTemp + String("  Max.  ") + strMaxTemp);
-    //Print third line on display
+    display.println(String(daysOfTheWeek[weekday()-1]) + " " + GetDigits(day()) +
+                    String(".") + GetDigits(month()) + String(".") + year() + 
+                    "  " + GetDigits(hour()) + String(":") + GetDigits(minute()));
+    display.println(String("Minimum  ") + strMinTemp + String(" C"));
+    display.println(String("Maximum  ") + strMaxTemp + String(" C"));
     display.println(String("Aktuell   ") + strCurTemp + String(" C"));  //"Aktuell" german for current
-    //Print last line on display
     display.println(String("Gefuehlt  ") + strFeelTemp + String(" C")); //"Gefuehlt" german for feels like
+    display.cp437(true);         // Use full 256 char 'Code Page 437' font
+    display.write(int16_t(30));
+    display.println(" Sonne  " + GetTimeAsString(strSunrise, utcOffsetInSeconds));
+    display.write(int16_t(31));
+    display.println(" Sonne  " + GetTimeAsString(strSunset, utcOffsetInSeconds));
+    display.println(GetMoonPhase());
     display.display();
     //Print all in serial monitor
     Serial.println("---------------------");
     Serial.println("EpochTime: " + String(timeClient.getEpochTime()));
     Serial.println(String(daysOfTheWeek[weekday()-1]) + String(". ") +
-                  getDigits(day()) + String(".") + getDigits(month()) + 
+                  GetDigits(day()) + String(".") + GetDigits(month()) + 
                   String(".") + year());
-    Serial.println(getDigits(hour()) + String(":") + getDigits(minute()));
-    Serial.println(String("Min ") + strMinTemp + String("  Max ") + strMaxTemp);
-    Serial.println(String("Current ") + strCurTemp);
-    Serial.println(String("Feels like ") + strFeelTemp);
-    
+    Serial.println(GetDigits(hour()) + String(":") + GetDigits(minute()));
+    Serial.println(String("Min: ") + strMinTemp);
+    Serial.println(String("Max: ") + strMaxTemp);
+    Serial.println(String("Current: ") + strCurTemp);
+    Serial.println(String("Feels like: ") + strFeelTemp);
+    Serial.println(String("Sunrise: ") + GetTimeAsString(strSunrise, utcOffsetInSeconds));
+    Serial.println(String("Sunset:  ") + GetTimeAsString(strSunset, utcOffsetInSeconds));
+    Serial.println(String("Moonphase: ") + GetMoonPhase());
     iLastMinute = minute();
     bUpdateDisplay = false;
   }
@@ -228,11 +239,80 @@ void DisplayUpdate()
 
 //Method to write given integer to String
 //If the value is less than 10, a "0" is placed in front
-String getDigits(int iValue)
+String GetDigits(int iValue)
 {
   String rValue = "";
   if(iValue < 10)
     rValue += "0";
   rValue += iValue;
   return rValue;
+}
+
+time_t tmConvert(int iYear, byte byMonth, byte byDay, byte byHour, byte byMinute, byte bySecond)
+{
+  tmElements_t tmSet;
+  tmSet.Year = iYear - 1970;
+  tmSet.Month = byMonth - 1;
+  tmSet.Day = byDay;
+  tmSet.Hour = byHour;
+  tmSet.Minute = byMinute;
+  tmSet.Second = bySecond;
+  return makeTime(tmSet);
+}
+
+String GetTimeAsString(int iValue,  int iOffset)
+{
+  if(iValue > 0){
+    iValue += iOffset;
+    return GetDigits(hour(iValue))+":"+GetDigits(minute(iValue));
+  }
+  return "";
+}
+
+double MoonUpdate()
+{
+    double dDaySinceLastFullmoon = (now() / 86400 - tmLastFullMoon / 86400) / 29.53;
+    int iToHundret = (dDaySinceLastFullmoon - int(dDaySinceLastFullmoon)) * 100;
+    return (double) iToHundret / 100; //Needed to get only 2 decimal places
+}
+
+String GetMoonPhase()
+{
+    static double dMoonphase = MoonUpdate();     //Method to update moonphase
+    Serial.println("Calculated moon result: " +String(dMoonphase,3));
+    if(dMoonphase == 0.0) 
+      dMoonphase = 1.00;
+      
+    if(dMoonphase < double(0.25))
+    {
+      return "Abnehmende Mond";
+    }
+    else if (dMoonphase == 0.25)
+    {
+      return "Abnehmender Halbmond";
+    }
+    else if(0.25 < dMoonphase && dMoonphase < 0.50)
+    {
+      return "Abnehmende Sichel";
+    }
+    else if(dMoonphase == 0.50)
+    {
+      return "Neumond";
+    }
+    else if(0.50 < dMoonphase && dMoonphase < 0.75)
+    {
+      return "Zunehmende Sichel";
+    }
+    else if(dMoonphase == 0.75)
+    {
+      return "Zunehmender Halbmond";
+    }
+    else if(0.75 < dMoonphase && dMoonphase < 1.00)
+    {
+      return "Zunehmender Mond";
+    }
+    else //Moonphase == 1
+    {
+      return "Vollmond";
+    }
 }
