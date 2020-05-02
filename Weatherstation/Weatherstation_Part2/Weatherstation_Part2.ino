@@ -6,7 +6,6 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 #include <TimeLib.h>
-#include <WiFi.h>
 #include <WiFiClientSecure.h>
 
 //Variables for display

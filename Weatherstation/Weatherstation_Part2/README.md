@@ -15,7 +15,7 @@ After connecting like shown below
 
 and adding the following libaries
 1. NTPClient
-2. WiFi
+2. WiFiClientSecure.h
 3. Adafruit SSD1306
 4. ArduinoJson
 5. Time
