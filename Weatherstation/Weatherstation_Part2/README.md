@@ -15,10 +15,11 @@ After connecting like shown below
 
 and adding the following libaries
 1. NTPClient
-2. WiFiClientSecure.h
-3. Adafruit SSD1306
-4. ArduinoJson
-5. Time
+2. WiFi
+3. WiFiClientSecure.h
+4. Adafruit SSD1306
+5. ArduinoJson
+6. Time
 
 and uploading the ino-File (**after modifing the TODOs**) to NodeMCU, the result looks like
 
