@@ -252,7 +252,7 @@ time_t tmConvert(int iYear, byte byMonth, byte byDay, byte byHour, byte byMinute
 {
   tmElements_t tmSet;
   tmSet.Year = iYear - 1970;
-  tmSet.Month = byMonth - 1;
+  tmSet.Month = byMonth;
   tmSet.Day = byDay;
   tmSet.Hour = byHour;
   tmSet.Minute = byMinute;
