@@ -1,4 +1,4 @@
-# Weatherstation part 1
+# Weatherstation old update
 Lets start simple with our weatherstation. First we want to know the weather data for our location and want to display them
 on a simple OLED-display. Every 5 minutes we want to have the newest weatherforecast and every minute an update to our output.
 

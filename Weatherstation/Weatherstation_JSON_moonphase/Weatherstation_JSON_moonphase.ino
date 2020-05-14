@@ -1,4 +1,9 @@
-// Weatherstation Part 2 -- 2020 Joern Weise GPL 3.0 --
+// Weatherstation with JSON and moonphase calculation 
+// Autor:   Joern Weise
+// License: GNU GPl 3.0
+// Created: 14. April 2020
+// Update:  14. April 2020
+//-----------------------------------------------------
 
 #include <Adafruit_SSD1306.h>
 #include <Wire.h>
