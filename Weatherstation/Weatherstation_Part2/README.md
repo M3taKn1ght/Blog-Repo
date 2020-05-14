@@ -1,4 +1,4 @@
-# Weatherstation part 2
+# Weatherstation with JSON and calculation moonphase
 Next step for our weatherstation. First we want to know the weather data for our location and want to display them
 on a simple OLED-display. Every 5 minutes we want to have the newest weatherforecast and every minute an update to our output.
 Also we want to know sunrise and sunset, also moonphase is interessting. Sunrise and sunset will extract from weatherforecast,
