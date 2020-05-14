@@ -290,7 +290,7 @@ String GetMoonPhase()
       
     if(dMoonphase < double(0.25))
     {
-      return "Abnehmende Mond";
+      return "Abnehmender Mond";
     }
     else if (dMoonphase == 0.25)
     {
