@@ -5,3 +5,4 @@ Repositoy for blog projects
 2. [Weatherstation with JSON and calculation mmonphase](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Weatherstation/Weatherstation_JSON_moonphase)
 3. [HowTo Fritzing](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing)
 - [How to create a schematic drawing](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_1)
+- [Create electric drawing from schematic one](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_2)
