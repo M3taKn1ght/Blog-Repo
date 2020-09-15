@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="BMP280.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg883"
+   version="1.1"
+   viewBox="0 0 11 13"
+   height="13mm"
+   width="11mm">
+  <defs
+     id="defs877" />
+  <sodipodi:namedview
+     inkscape:snap-intersection-paths="false"
+     inkscape:window-maximized="0"
+     inkscape:window-y="40"
+     inkscape:window-x="1998"
+     inkscape:window-height="1041"
+     inkscape:window-width="1296"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="35.59198"
+     inkscape:cx="20.620713"
+     inkscape:zoom="11.313708"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:snap-object-midpoints="true" />
+  <metadata
+     id="metadata880">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-54.42857,-43.089287)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <path
+       id="rect1448"
+       style="fill:#800080;stroke-width:0.999999"
+       d="M 3.7792969 0 C 1.6854386 0 2.3684758e-15 1.6854386 0 3.7792969 L 0 45.353516 C 0 47.447374 1.6854386 49.134766 3.7792969 49.134766 L 37.794922 49.134766 C 39.88878 49.134766 41.574219 47.447374 41.574219 45.353516 L 41.574219 3.7792969 C 41.574219 1.6854386 39.88878 2.3684758e-15 37.794922 0 L 3.7792969 0 z M 10.464844 2.078125 A 8.5039366 8.5039366 0 0 1 10.466797 2.078125 A 8.5039366 8.5039366 0 0 1 10.582031 2.078125 A 8.5039366 8.5039366 0 0 1 19.087891 10.582031 A 8.5039366 8.5039366 0 0 1 10.582031 19.085938 A 8.5039366 8.5039366 0 0 1 2.078125 10.582031 A 8.5039366 8.5039366 0 0 1 10.464844 2.078125 z M 6.2851562 41.384766 A 2.8346457 2.8346457 0 0 1 6.3496094 41.384766 A 2.8346457 2.8346457 0 0 1 9.1835938 44.220703 A 2.8346457 2.8346457 0 0 1 6.3496094 47.054688 A 2.8346457 2.8346457 0 0 1 3.515625 44.220703 A 2.8346457 2.8346457 0 0 1 6.2851562 41.384766 z M 15.884766 41.384766 A 2.8346457 2.8346457 0 0 1 15.949219 41.384766 A 2.8346457 2.8346457 0 0 1 18.783203 44.220703 A 2.8346457 2.8346457 0 0 1 15.949219 47.054688 A 2.8346457 2.8346457 0 0 1 13.115234 44.220703 A 2.8346457 2.8346457 0 0 1 15.884766 41.384766 z M 25.548828 41.384766 A 2.8346457 2.8346457 0 0 1 28.384766 44.220703 A 2.8346457 2.8346457 0 0 1 25.548828 47.054688 A 2.8346457 2.8346457 0 0 1 22.714844 44.220703 A 2.8346457 2.8346457 0 0 1 25.548828 41.384766 z M 35.083984 41.384766 A 2.8346457 2.8346457 0 0 1 35.148438 41.384766 A 2.8346457 2.8346457 0 0 1 37.984375 44.220703 A 2.8346457 2.8346457 0 0 1 35.148438 47.054688 A 2.8346457 2.8346457 0 0 1 32.314453 44.220703 A 2.8346457 2.8346457 0 0 1 35.083984 41.384766 z "
+       transform="matrix(0.26458333,0,0,0.26458333,54.42857,43.089287)" />
+    <path
+       id="path839"
+       style="fill:#e6ab00;fill-opacity:1;stroke-width:1.71747"
+       d="M 10.474609 1.1347656 A 9.4488189 9.4488189 0 0 0 1.1347656 10.582031 A 9.4488189 9.4488189 0 0 0 10.582031 20.03125 A 9.4488189 9.4488189 0 0 0 20.03125 10.582031 A 9.4488189 9.4488189 0 0 0 10.582031 1.1347656 A 9.4488189 9.4488189 0 0 0 10.474609 1.1347656 z M 10.582031 2.078125 A 8.503937 8.503937 0 0 1 19.085938 10.582031 A 8.503937 8.503937 0 0 1 10.582031 19.085938 A 8.503937 8.503937 0 0 1 2.078125 10.582031 A 8.503937 8.503937 0 0 1 10.582031 2.078125 z "
+       transform="matrix(0.26458333,0,0,0.26458333,54.42857,43.089287)" />
+    <path
+       style="fill:#e6ab00;fill-opacity:1;stroke-width:0.264583"
+       d="m 62.72826,54.789226 a 1,1 0 0 0 1.000456,0.999939 1,1 0 0 0 0.999939,-0.999939 1,1 0 0 0 -0.999939,-0.999939 1,1 0 0 0 -1.000456,0.999939 z m 0.250114,0 a 0.75000001,0.75000001 0 0 1 0.750342,-0.749825 0.75000001,0.75000001 0 0 1 0.749825,0.749825 0.75000001,0.75000001 0 0 1 -0.749825,0.750341 0.75000001,0.75000001 0 0 1 -0.750342,-0.750341 z"
+       id="path3988"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#e6ab00;fill-opacity:1;stroke-width:0.264583"
+       d="m 60.188363,54.789226 a 1,1 0 0 0 0.999939,0.999939 1,1 0 0 0 1.000456,-0.999939 1,1 0 0 0 -1.000456,-0.999939 1,1 0 0 0 -0.999939,0.999939 z m 0.250114,0 a 0.75000001,0.75000001 0 0 1 0.749825,-0.749825 0.75000001,0.75000001 0 0 1 0.750342,0.749825 0.75000001,0.75000001 0 0 1 -0.750342,0.750341 0.75000001,0.75000001 0 0 1 -0.749825,-0.750341 z"
+       id="path3988-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#e6ab00;fill-opacity:1;stroke-width:0.264583"
+       d="m 57.648467,54.789226 a 1,1 0 0 0 0.999939,0.999939 1,1 0 0 0 0.999939,-0.999939 1,1 0 0 0 -0.999939,-0.999939 1,1 0 0 0 -0.999939,0.999939 z m 0.250114,0 a 0.75000001,0.75000001 0 0 1 0.749825,-0.749825 0.75000001,0.75000001 0 0 1 0.750341,0.749825 0.75000001,0.75000001 0 0 1 -0.750341,0.750341 0.75000001,0.75000001 0 0 1 -0.749825,-0.750341 z"
+       id="path3988-3-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#e6ab00;fill-opacity:1;stroke-width:0.264583"
+       d="m 55.10857,54.789226 a 1,1 0 0 0 0.999939,0.999939 1,1 0 0 0 0.999939,-0.999939 1,1 0 0 0 -0.999939,-0.999939 1,1 0 0 0 -0.999939,0.999939 z m 0.250114,0 a 0.75000001,0.75000001 0 0 1 0.749825,-0.749825 0.75000001,0.75000001 0 0 1 0.749825,0.749825 0.75000001,0.75000001 0 0 1 -0.749825,0.750341 0.75000001,0.75000001 0 0 1 -0.749825,-0.750341 z"
+       id="path3988-3-6-7"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(0,-0.2,0.2,0,53.028067,54.995019)"
+       id="g1156">
+      <rect
+         fill="#303030"
+         stroke-width="0.191247"
+         height="6.8579998"
+         width="10.08"
+         y="45.264515"
+         x="39.448658"
+         id="middle"
+         style="fill:#808080" />
+      <rect
+         fill="#3d3d3d"
+         stroke-width="0.191247"
+         height="0.62484002"
+         width="10.08"
+         y="45.264515"
+         x="39.448658"
+         id="top"
+         style="fill:#4d4d4d" />
+      <rect
+         fill="#000000"
+         stroke-width="0.191247"
+         height="0.62484002"
+         width="10.08"
+         y="51.487514"
+         x="39.448658"
+         id="bottom"
+         style="fill:#4d4d4d" />
+      <polygon
+         fill="#141414"
+         points="692.5,54.6 692.5,275.4 700,300 700,30 "
+         id="right"
+         transform="matrix(0.0254,0,0,0.0254,31.74857,44.502514)"
+         style="fill:#333333" />
+      <polygon
+         fill="#1f1f1f"
+         points="0,30 7.5,54 7.5,275 0,300 "
+         id="left"
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)"
+         style="fill:#666666" />
+      <circle
+         fill="#212121"
+         stroke-width="0.254"
+         id="circle13"
+         r="0.52324003"
+         cy="48.693516"
+         cx="40.718658"
+         style="fill:#cccccc" />
+      <text
+         font-size="60"
+         y="-44.135216"
+         x="48.560963"
+         id="label"
+         style="font-size:1.05833px;font-family:OCRA;text-anchor:middle;fill:#e6e6e6;stroke-width:0.0254"
+         transform="rotate(90)">BME280</text>
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         y="51.766914"
+         x="40.337658"
+         id="connector0pin" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         y="52.122513"
+         x="40.337658"
+         id="connector0terminal" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon18"
+         points="85,297 85,286 35,286 35,306 65,306 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         x="40.337658"
+         id="connector13pin"
+         y="44.502514" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         x="40.337658"
+         id="connector13terminal"
+         y="44.502514" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon22"
+         points="35,23 35,43 85,43 85,32 65,23 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         y="52.122513"
+         x="47.877605"
+         id="connector6terminal" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon26"
+         points="665,306 665,286 615,286 615,297 635,306 "
+         transform="matrix(0.0254,0,0,0.0254,31.74857,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         y="44.502514"
+         x="47.877605"
+         id="connector7terminal" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon30"
+         points="615,32 615,43 665,43 665,23 635,23 "
+         transform="matrix(0.0254,0,0,0.0254,31.74857,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         y="44.502514"
+         x="42.877659"
+         id="connector12pin" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         x="42.877659"
+         id="connector12terminal"
+         y="44.502514" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon34"
+         points="115,32 115,43 185,43 185,32 165,23 135,23 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         y="44.502514"
+         x="45.417656"
+         id="connector11pin" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         x="45.417656"
+         id="connector11terminal"
+         y="44.502514" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon38"
+         points="215,32 215,43 285,43 285,32 265,23 235,23 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         y="51.766914"
+         x="42.877659"
+         id="connector1pin" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         y="52.122513"
+         x="42.877659"
+         id="connector1terminal" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon54"
+         points="185,297 185,286 115,286 115,297 135,306 165,306 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="1.0922"
+         width="0.76200002"
+         y="51.766914"
+         x="45.417656"
+         id="connector2pin" />
+      <rect
+         fill="#8c8c8c"
+         stroke-width="0.254"
+         height="0.76200002"
+         width="0.76200002"
+         y="52.122513"
+         x="45.417656"
+         id="connector2terminal" />
+      <polygon
+         fill="#8c8c8c"
+         id="polygon58"
+         points="285,297 285,286 215,286 215,297 235,306 265,306 "
+         transform="matrix(0.0254,0,0,0.0254,39.448657,44.502514)" />
+    </g>
+    <rect
+       transform="rotate(-90)"
+       y="62.028572"
+       x="-48.589287"
+       height="0.5"
+       width="1"
+       id="rect4319"
+       style="fill:#999999;fill-opacity:1;stroke-width:0.204111" />
+    <rect
+       transform="rotate(-90)"
+       y="61.42857"
+       x="-48.589287"
+       height="0.5"
+       width="1"
+       id="rect4319-6"
+       style="fill:#999999;fill-opacity:1;stroke-width:0.204111" />
+    <rect
+       transform="rotate(-90)"
+       y="62.628574"
+       x="-48.589287"
+       height="0.5"
+       width="1"
+       id="rect4319-6-1"
+       style="fill:#999999;fill-opacity:1;stroke-width:0.204111" />
+    <rect
+       transform="rotate(-90)"
+       y="56.92857"
+       x="-51.589287"
+       height="1"
+       width="1"
+       id="rect4319-6-6"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.288658" />
+    <rect
+       transform="rotate(-90)"
+       y="59.528572"
+       x="-51.589287"
+       height="1"
+       width="1"
+       id="rect4319-6-6-2"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.288658" />
+    <text
+       id="text1499"
+       y="48.426064"
+       x="54.969082"
+       style="font-size:1.41111px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:OCRA;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="48.426064"
+         x="54.969082"
+         id="tspan1497"
+         sodipodi:role="line" /><tspan
+         dy="0"
+         id="tspan1501"
+         style="font-size:1.32292px;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         y="50.189953"
+         x="54.969082"
+         sodipodi:role="line">BME/BMP280</tspan></text>
+    <text
+       transform="rotate(-90)"
+       id="text1505"
+       y="56.729237"
+       x="-53.611046"
+       style="font-size:1.32292px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:OCRA;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:1.32292px;fill:#ffffff;stroke-width:0.264583"
+         y="56.729237"
+         x="-53.611046"
+         id="tspan1503"
+         sodipodi:role="line">VIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:1.32291667px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:OCRA;stroke-width:0.264583;"
+       x="-53.590969"
+       y="59.229237"
+       id="text1505-6"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan1503-2"
+         x="-53.590969"
+         y="59.229237"
+         style="fill:#ffffff;stroke-width:0.264583;font-size:1.32291667px;">GND</tspan></text>
+    <text
+       transform="rotate(-90)"
+       id="text1505-6-3"
+       y="61.729237"
+       x="-53.590969"
+       style="font-size:1.32292px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:OCRA;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:1.32292px;fill:#ffffff;stroke-width:0.264583"
+         y="61.729237"
+         x="-53.590969"
+         id="tspan1503-2-2"
+         sodipodi:role="line">SCL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:1.32292px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:OCRA;stroke-width:0.264583"
+       x="-53.590969"
+       y="64.329239"
+       id="text1505-6-3-8"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan1503-2-2-1"
+         x="-53.590969"
+         y="64.329239"
+         style="font-size:1.32292px;fill:#ffffff;stroke-width:0.264583">SDA</tspan></text>
+  </g>
+</svg>
