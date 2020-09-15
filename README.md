@@ -7,4 +7,4 @@ Repositoy for blog projects in german
 - [How to create a schematic drawing](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_1)
 - [Create electric drawing from schematic one](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_2)
 - [What are fritzing-parts and where to find them](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_3)
-- [How to create an own svg-part with InkScape] (https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_4)
+- [How to create an own svg-part with InkScape](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_4)
