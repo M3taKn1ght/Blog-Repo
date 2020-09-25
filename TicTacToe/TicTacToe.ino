@@ -1,3 +1,10 @@
+//-----------------------------------------------------
+// Game "Tic Tac Toe" for Arduino
+// Autor:   Joern Weise
+// License: GNU GPl 3.0
+// Created: 01. Aug 2020
+// Update:  08. Aug 2020
+//-----------------------------------------------------
 #include <Adafruit_GFX.h>
 #include <MCUFRIEND_kbv.h>
 MCUFRIEND_kbv tft;
