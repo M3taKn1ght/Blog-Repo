@@ -11,3 +11,5 @@ Repositoy for blog projects in german
 4. [Tic Tac Toe](https://github.com/M3taKn1ght/Blog-Repo/tree/master/TicTacToe)
 5. [Flash bootloader](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Flash_Bootloader_arduino)
 6. [Weihnachtsblogs 2020](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Weihnachtsblogs2020)
+7. [Control a robot with MQTT](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT)
+- [MQTT-basics and install an MQTT-broker on a raspberry pi](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT/Part_1)
