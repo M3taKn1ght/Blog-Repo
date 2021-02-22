@@ -13,4 +13,6 @@ Repositoy for blog projects in german
 6. [Weihnachtsblogs 2020](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Weihnachtsblogs2020)
 7. [Control a robot with MQTT](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT)
 - [MQTT-basics and install an MQTT-broker on a raspberry pi](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT/Part_1)
+- [Include multi clients to broker to subscribe and/or publish messages ](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT/Part_2)
+- [Making a little rollrobot (Rollrobert) with a simple remote control](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT/Part_3)
 8. [Game Cyclone](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Cyclone)
