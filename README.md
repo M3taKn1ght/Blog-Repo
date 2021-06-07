@@ -8,6 +8,7 @@ Repositoy for blog projects in german
 - [Create electric drawing from schematic one](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_2)
 - [What are fritzing-parts and where to find them](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_3)
 - [How to create an own svg-part with InkScape](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_4)
+- [Add parts to library](https://github.com/M3taKn1ght/Blog-Repo/tree/master/HowTo_Fritzing/Part_4)
 4. [Tic Tac Toe](https://github.com/M3taKn1ght/Blog-Repo/tree/master/TicTacToe)
 5. [Flash bootloader](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Flash_Bootloader_arduino)
 6. [Weihnachtsblogs 2020](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Weihnachtsblogs2020)
