@@ -18,3 +18,6 @@ Repositoy for blog projects in german
 - [Making a little rollrobot (Rollrobert) with a simple remote control](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Robot_with_MQTT/Part_3)
 8. [Game Cyclone](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Cyclone)
 9. [H-Bridge](https://github.com/M3taKn1ght/Blog-Repo/tree/master/H-Bridge)
+10. [3D-Printer](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer)
+- [Starting up with 3D-Printer](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_1)
+- [What is gcode and how to get it](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_2)
