@@ -21,5 +21,7 @@ Repositoy for blog projects in german
 10. [3D-Printer](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer)
 - [Starting up with 3D-Printer](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_1)
 - [What is gcode and how to get it](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_2)
+- [Modify printer with new stepper motor drivers](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_3)
+- [Mesh bed leveling and OctoPrint](https://github.com/M3taKn1ght/Blog-Repo/tree/master/3D-Printer/Part_4)
 11. [Game 4 Gewinnt](https://github.com/M3taKn1ght/Blog-Repo/tree/master/4_Gewinnt)
 12. [Analog clock with Az-Touch Wandmod](https://github.com/M3taKn1ght/Blog-Repo/tree/master/Wandmod_Analog_Clock)
