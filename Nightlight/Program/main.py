@@ -13,7 +13,7 @@ btn = Pin(BTN_PIN, Pin.IN, Pin.PULL_DOWN)
 
 ## Constants
 DEFTIMEBTN = 15*60*1000 #Define for lights on
-                                                                       0 = 50 #Timer colorchange
+TIMECOLORCHANGE = 50 #Timer colorchange
 TIMECOLOROFF = 0 #Timer
 red = pixels.colorHSV(0, 255, 255)
 green = pixels.colorHSV(21845, 255, 255)
