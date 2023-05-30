@@ -297,6 +297,7 @@ bool UpdateOpenWeatherMapData()
 String RequestData()
 {
   WiFiClientSecure client;
+  client.setInsecure();
   if(!client.connect(clientAdress,443)){
     Serial.println("Failed to connect");
     return "";
